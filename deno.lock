@@ -6,8 +6,8 @@
     "jsr:@std/path@1": "1.1.4",
     "jsr:@std/path@^1.1.4": "1.1.4",
     "npm:@sveltejs/adapter-static@3": "3.0.10_@sveltejs+kit@2.50.2__@sveltejs+vite-plugin-svelte@3.1.2___svelte@4.2.20___vite@5.4.21____lightningcss@1.31.1___lightningcss@1.31.1__svelte@4.2.20__typescript@5.9.3__vite@5.4.21___lightningcss@1.31.1__acorn@8.15.0__lightningcss@1.31.1_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.20__vite@5.4.21___lightningcss@1.31.1__lightningcss@1.31.1_svelte@4.2.20_typescript@5.9.3_vite@5.4.21__lightningcss@1.31.1_lightningcss@1.31.1",
-    "npm:@sveltejs/kit@^2.50.0": "2.50.2_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.20__vite@5.4.21___lightningcss@1.31.1__lightningcss@1.31.1_svelte@4.2.20_typescript@5.9.3_vite@5.4.21__lightningcss@1.31.1_acorn@8.15.0_lightningcss@1.31.1",
-    "npm:@sveltejs/vite-plugin-svelte@^3.1.0": "3.1.2_svelte@4.2.20_vite@5.4.21__lightningcss@1.31.1_lightningcss@1.31.1",
+    "npm:@sveltejs/kit@^2.50.0": "2.50.2_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.20__vite@5.4.21___lightningcss@1.31.1_svelte@4.2.20_typescript@5.9.3_vite@5.4.21__lightningcss@1.31.1",
+    "npm:@sveltejs/vite-plugin-svelte@7": "7.1.2_svelte@4.2.20_vite@5.4.21__lightningcss@1.31.1",
     "npm:@tailwindcss/vite@^4.1.0": "4.1.18_vite@5.4.21__lightningcss@1.31.1_lightningcss@1.31.1",
     "npm:@tauri-apps/api@^2.10.0": "2.10.1",
     "npm:@tauri-apps/cli@^2.10.0": "2.10.0",
@@ -325,6 +325,9 @@
       "integrity": "sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w=="
     },
     "@sveltejs/acorn-typescript@1.0.8_acorn@8.15.0": {
+      "integrity": "sha512-esgN+54+q0NjB0Y/4BomT9samII7jGwNy/2a3wNZbT2A2RpmXsXwUt24LvLhx6jUq2gVk4cWEvcRO6MFQbOfNA=="
+    },
+    "@sveltejs/acorn-typescript@1.0.8_acorn@8.16.0": {
       "integrity": "sha512-esgN+54+q0NjB0Y/4BomT9samII7jGwNy/2a3wNZbT2A2RpmXsXwUt24LvLhx6jUq2gVk4cWEvcRO6MFQbOfNA==",
       "dependencies": [
         "acorn"
@@ -333,15 +336,40 @@
     "@sveltejs/adapter-static@3.0.10_@sveltejs+kit@2.50.2__@sveltejs+vite-plugin-svelte@3.1.2___svelte@4.2.20___vite@5.4.21____lightningcss@1.31.1___lightningcss@1.31.1__svelte@4.2.20__typescript@5.9.3__vite@5.4.21___lightningcss@1.31.1__acorn@8.15.0__lightningcss@1.31.1_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.20__vite@5.4.21___lightningcss@1.31.1__lightningcss@1.31.1_svelte@4.2.20_typescript@5.9.3_vite@5.4.21__lightningcss@1.31.1_lightningcss@1.31.1": {
       "integrity": "sha512-7D9lYFWJmB7zxZyTE/qxjksvMqzMuYrrsyh1f4AlZqeZeACPRySjbC3aFiY55wb1tWUaKOQG9PVbm74JcN2Iew==",
       "dependencies": [
-        "@sveltejs/kit"
+        "@sveltejs/kit@2.50.2_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.20__vite@5.4.21___lightningcss@1.31.1__lightningcss@1.31.1_svelte@4.2.20_typescript@5.9.3_vite@5.4.21__lightningcss@1.31.1_acorn@8.15.0_lightningcss@1.31.1"
       ]
     },
     "@sveltejs/kit@2.50.2_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.20__vite@5.4.21___lightningcss@1.31.1__lightningcss@1.31.1_svelte@4.2.20_typescript@5.9.3_vite@5.4.21__lightningcss@1.31.1_acorn@8.15.0_lightningcss@1.31.1": {
       "integrity": "sha512-875hTUkEbz+MyJIxWbQjfMaekqdmEKUUfR7JyKcpfMRZqcGyrO9Gd+iS1D/Dx8LpE5FEtutWGOtlAh4ReSAiOA==",
       "dependencies": [
         "@standard-schema/spec",
-        "@sveltejs/acorn-typescript",
-        "@sveltejs/vite-plugin-svelte",
+        "@sveltejs/acorn-typescript@1.0.8_acorn@8.15.0",
+        "@sveltejs/vite-plugin-svelte@3.1.2_svelte@4.2.20_vite@5.4.21__lightningcss@1.31.1_lightningcss@1.31.1",
+        "@types/cookie",
+        "acorn",
+        "cookie",
+        "devalue",
+        "esm-env",
+        "kleur",
+        "magic-string",
+        "mrmime",
+        "sade",
+        "set-cookie-parser",
+        "sirv",
+        "typescript",
+        "vite"
+      ],
+      "optionalPeers": [
+        "typescript"
+      ],
+      "bin": true
+    },
+    "@sveltejs/kit@2.50.2_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.20__vite@5.4.21___lightningcss@1.31.1_svelte@4.2.20_typescript@5.9.3_vite@5.4.21__lightningcss@1.31.1": {
+      "integrity": "sha512-875hTUkEbz+MyJIxWbQjfMaekqdmEKUUfR7JyKcpfMRZqcGyrO9Gd+iS1D/Dx8LpE5FEtutWGOtlAh4ReSAiOA==",
+      "dependencies": [
+        "@standard-schema/spec",
+        "@sveltejs/acorn-typescript@1.0.8_acorn@8.16.0",
+        "@sveltejs/vite-plugin-svelte@3.1.2_svelte@4.2.20_vite@5.4.21__lightningcss@1.31.1",
         "@types/cookie",
         "acorn",
         "cookie",
@@ -362,16 +390,16 @@
       ],
       "bin": true
     },
-    "@sveltejs/vite-plugin-svelte-inspector@2.1.0_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.20__vite@5.4.21___lightningcss@1.31.1__lightningcss@1.31.1_svelte@4.2.20_vite@5.4.21__lightningcss@1.31.1_lightningcss@1.31.1": {
+    "@sveltejs/vite-plugin-svelte-inspector@2.1.0_@sveltejs+vite-plugin-svelte@3.1.2__svelte@4.2.20__vite@5.4.21___lightningcss@1.31.1_svelte@4.2.20_vite@5.4.21__lightningcss@1.31.1": {
       "integrity": "sha512-9QX28IymvBlSCqsCll5t0kQVxipsfhFFL+L2t3nTWfXnddYwxBuAEtTtlaVQpRz9c37BhJjltSeY4AJSC03SSg==",
       "dependencies": [
-        "@sveltejs/vite-plugin-svelte",
+        "@sveltejs/vite-plugin-svelte@3.1.2_svelte@4.2.20_vite@5.4.21__lightningcss@1.31.1",
         "debug",
         "svelte",
         "vite"
       ]
     },
-    "@sveltejs/vite-plugin-svelte@3.1.2_svelte@4.2.20_vite@5.4.21__lightningcss@1.31.1_lightningcss@1.31.1": {
+    "@sveltejs/vite-plugin-svelte@3.1.2_svelte@4.2.20_vite@5.4.21__lightningcss@1.31.1": {
       "integrity": "sha512-Txsm1tJvtiYeLUVRNqxZGKR/mI+CzuIQuc2gn+YCs9rMTowpNZ2Nqt53JdL8KF9bLhAf2ruR/dr9eZCwdTriRA==",
       "dependencies": [
         "@sveltejs/vite-plugin-svelte-inspector",
@@ -382,7 +410,31 @@
         "svelte",
         "svelte-hmr",
         "vite",
-        "vitefu"
+        "vitefu@0.2.5_vite@5.4.21__lightningcss@1.31.1_lightningcss@1.31.1"
+      ]
+    },
+    "@sveltejs/vite-plugin-svelte@3.1.2_svelte@4.2.20_vite@5.4.21__lightningcss@1.31.1_lightningcss@1.31.1": {
+      "integrity": "sha512-Txsm1tJvtiYeLUVRNqxZGKR/mI+CzuIQuc2gn+YCs9rMTowpNZ2Nqt53JdL8KF9bLhAf2ruR/dr9eZCwdTriRA==",
+      "dependencies": [
+        "@sveltejs/vite-plugin-svelte-inspector",
+        "debug",
+        "deepmerge",
+        "kleur",
+        "magic-string",
+        "svelte-hmr",
+        "vite",
+        "vitefu@0.2.5_vite@5.4.21__lightningcss@1.31.1_lightningcss@1.31.1"
+      ]
+    },
+    "@sveltejs/vite-plugin-svelte@7.1.2_svelte@4.2.20_vite@5.4.21__lightningcss@1.31.1": {
+      "integrity": "sha512-DrUBA2UXRfDmUX/ZTiEopd3X40yavsJF1FX2RygcuIScHL7o5YX1fMvoYnDhjeJQC4weCOklirpNWlcb2NiSeA==",
+      "dependencies": [
+        "deepmerge",
+        "magic-string",
+        "obug",
+        "svelte",
+        "vite",
+        "vitefu@1.1.3_vite@5.4.21__lightningcss@1.31.1"
       ]
     },
     "@tailwindcss/node@4.1.18": {
@@ -578,8 +630,8 @@
     "@types/trusted-types@2.0.7": {
       "integrity": "sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw=="
     },
-    "acorn@8.15.0": {
-      "integrity": "sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==",
+    "acorn@8.16.0": {
+      "integrity": "sha512-UVJyE9MttOsBQIDKw1skb9nAwQuR5wuGD3+82K6JgJlm/Y+KI92oNsMNGZCYdDsVtRHSak0pcV5Dno5+4jh9sw==",
       "bin": true
     },
     "aria-query@5.3.2": {
@@ -894,6 +946,9 @@
       "integrity": "sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==",
       "bin": true
     },
+    "obug@2.1.1": {
+      "integrity": "sha512-uTqF9MuPraAQ+IsnPf366RG4cP9RtUi7MLO1N3KEc+wb0a6yKpeL0lmk2IB1jY5KHPAlTc6T/JRdC/YqxHNwkQ=="
+    },
     "periscopic@3.1.0": {
       "integrity": "sha512-vKiQ8RRtkl9P+r/+oefh25C3fhybptkHKCZSPlcXiJux2tJF55GnEj3BVn4A5gKfq9NWWXXrxkHBwVPUfH0opw==",
       "dependencies": [
@@ -1052,6 +1107,15 @@
       "optionalPeers": [
         "vite"
       ]
+    },
+    "vitefu@1.1.3_vite@5.4.21__lightningcss@1.31.1": {
+      "integrity": "sha512-ub4okH7Z5KLjb6hDyjqrGXqWtWvoYdU3IGm/NorpgHncKoLTCfRIbvlhBm7r0YstIaQRYlp4yEbFqDcKSzXSSg==",
+      "dependencies": [
+        "vite"
+      ],
+      "optionalPeers": [
+        "vite"
+      ]
     }
   },
   "workspace": {
@@ -1059,7 +1123,7 @@
       "dependencies": [
         "npm:@sveltejs/adapter-static@3",
         "npm:@sveltejs/kit@^2.50.0",
-        "npm:@sveltejs/vite-plugin-svelte@^3.1.0",
+        "npm:@sveltejs/vite-plugin-svelte@7",
         "npm:@tailwindcss/vite@^4.1.0",
         "npm:@tauri-apps/api@^2.10.0",
         "npm:@tauri-apps/cli@^2.10.0",
