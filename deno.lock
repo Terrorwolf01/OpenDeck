@@ -19,10 +19,10 @@
     "npm:marked-base-url@^1.1.0": "1.1.8_marked@17.0.1",
     "npm:marked@17": "17.0.1",
     "npm:phosphor-svelte@2": "2.0.1_svelte@4.2.20",
-    "npm:svelte-check@^4.3.0": "4.3.6_svelte@4.2.20_typescript@5.9.3",
+    "npm:svelte-check@^4.3.0": "4.3.6_svelte@4.2.20_typescript@6.0.3",
     "npm:svelte@^4.2.0": "4.2.20",
     "npm:tailwindcss@^4.1.0": "4.1.18",
-    "npm:typescript@^5.9.0": "5.9.3",
+    "npm:typescript@6": "6.0.3",
     "npm:vite@^5.4.0": "5.4.21_lightningcss@1.31.1"
   },
   "jsr": {
@@ -354,11 +354,11 @@
         "set-cookie-parser",
         "sirv",
         "svelte",
-        "typescript",
+        "typescript@5.9.3",
         "vite"
       ],
       "optionalPeers": [
-        "typescript"
+        "typescript@5.9.3"
       ],
       "bin": true
     },
@@ -977,7 +977,7 @@
     "source-map-js@1.2.1": {
       "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="
     },
-    "svelte-check@4.3.6_svelte@4.2.20_typescript@5.9.3": {
+    "svelte-check@4.3.6_svelte@4.2.20_typescript@6.0.3": {
       "integrity": "sha512-uBkz96ElE3G4pt9E1Tw0xvBfIUQkeH794kDQZdAUk795UVMr+NJZpuFSS62vcmO/DuSalK83LyOwhgWq8YGU1Q==",
       "dependencies": [
         "@jridgewell/trace-mapping",
@@ -986,7 +986,7 @@
         "picocolors",
         "sade",
         "svelte",
-        "typescript"
+        "typescript@6.0.3"
       ],
       "bin": true
     },
@@ -1026,6 +1026,10 @@
     },
     "typescript@5.9.3": {
       "integrity": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==",
+      "bin": true
+    },
+    "typescript@6.0.3": {
+      "integrity": "sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==",
       "bin": true
     },
     "vite@5.4.21_lightningcss@1.31.1": {
@@ -1074,7 +1078,7 @@
         "npm:svelte-check@^4.3.0",
         "npm:svelte@^4.2.0",
         "npm:tailwindcss@^4.1.0",
-        "npm:typescript@^5.9.0",
+        "npm:typescript@6",
         "npm:vite@^5.4.0"
       ]
     }
