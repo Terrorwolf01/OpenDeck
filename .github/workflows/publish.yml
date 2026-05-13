@@ -44,7 +44,7 @@ jobs:
           workspaces: "./src-tauri -> target"
 
       - name: setup Deno
-        uses: denoland/setup-deno@v1
+        uses: denoland/setup-deno@v2.0.4
         with:
           deno-version: v2.x
 
