@@ -31,7 +31,7 @@ log = "0.4"
 log-panics = "2.1"
 open = "5.3"
 tauri-plugin-log = "2.8"
-tauri-plugin-cors-fetch = "4.2"
+tauri-plugin-cors-fetch = "5.0"
 tauri-plugin-single-instance = { version = "2.4", features = ["deep-link"] }
 tauri-plugin-autostart = "2.5"
 tauri-plugin-dialog = "2.6"
