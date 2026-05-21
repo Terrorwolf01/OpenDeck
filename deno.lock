@@ -15,9 +15,9 @@
     "npm:@tauri-apps/plugin-dialog@^2.6.0": "2.6.0",
     "npm:dompurify@^3.3.0": "3.3.1",
     "npm:lightningcss@^1.31.0": "1.31.1",
-    "npm:marked-alert@^2.1.0": "2.1.2_marked@17.0.1",
+    "npm:marked-alert@^2.1.0": "2.1.2_marked@18.0.4",
     "npm:marked-base-url@^1.1.0": "1.1.8_marked@17.0.1",
-    "npm:marked@17": "17.0.1",
+    "npm:marked@18": "18.0.4",
     "npm:phosphor-svelte@2": "2.0.1_svelte@4.2.20",
     "npm:svelte-check@^4.3.0": "4.3.6_svelte@4.2.20_typescript@5.9.3",
     "npm:svelte@^4.2.0": "4.2.20",
@@ -862,20 +862,24 @@
         "@jridgewell/sourcemap-codec"
       ]
     },
-    "marked-alert@2.1.2_marked@17.0.1": {
+    "marked-alert@2.1.2_marked@18.0.4": {
       "integrity": "sha512-EFNRZ08d8L/iEIPLTlQMDjvwIsj03gxWCczYTht6DCiHJIZhMk4NK5gtPY9UqAYb09eV5VGT+jD4lp396E0I+w==",
       "dependencies": [
-        "marked"
+        "marked@18.0.4"
       ]
     },
     "marked-base-url@1.1.8_marked@17.0.1": {
       "integrity": "sha512-RA80m/VTq82jAnpusyK7B4M45TZ3LMB1ymrdAJI3oaSG4+8MzBc8FFlVKIAhkBrfRM7CxeTHTGUVVK59/eiQyA==",
       "dependencies": [
-        "marked"
+        "marked@17.0.1"
       ]
     },
     "marked@17.0.1": {
       "integrity": "sha512-boeBdiS0ghpWcSwoNm/jJBwdpFaMnZWRzjA6SkUMYb40SVaN1x7mmfGKp0jvexGcx+7y2La5zRZsYFZI6Qpypg==",
+      "bin": true
+    },
+    "marked@18.0.4": {
+      "integrity": "sha512-c/BTaKzg0G6ezQx97DAkYU7k0HM6ys0FqYeKBL6hlBByZwy+ycA1+f0vDdjMHKKeEjdgkx0GOv9Il6D+85cOqA==",
       "bin": true
     },
     "mdn-data@2.0.30": {
@@ -1069,7 +1073,7 @@
         "npm:lightningcss@^1.31.0",
         "npm:marked-alert@^2.1.0",
         "npm:marked-base-url@^1.1.0",
-        "npm:marked@17",
+        "npm:marked@18",
         "npm:phosphor-svelte@2",
         "npm:svelte-check@^4.3.0",
         "npm:svelte@^4.2.0",
